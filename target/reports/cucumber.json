@@ -1,0 +1,1423 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-02T09:30:23.577Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2349000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User calls the get user endpoint \"get response with default parameters\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1350000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am calling GET user endpoint to fetch data with \"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"page\": 1,\n    \"per_page\": 6,\n    \"total\": 12,\n    \"total_pages\": 2,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"email\": \"george.bluth@reqres.in\",\n            \"first_name\": \"George\",\n            \"last_name\": \"Bluth\",\n            \"avatar\": \"https://reqres.in/img/faces/1-image.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"email\": \"janet.weaver@reqres.in\",\n            \"first_name\": \"Janet\",\n            \"last_name\": \"Weaver\",\n            \"avatar\": \"https://reqres.in/img/faces/2-image.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"email\": \"emma.wong@reqres.in\",\n            \"first_name\": \"Emma\",\n            \"last_name\": \"Wong\",\n            \"avatar\": \"https://reqres.in/img/faces/3-image.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"email\": \"eve.holt@reqres.in\",\n            \"first_name\": \"Eve\",\n            \"last_name\": \"Holt\",\n            \"avatar\": \"https://reqres.in/img/faces/4-image.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"email\": \"charles.morris@reqres.in\",\n            \"first_name\": \"Charles\",\n            \"last_name\": \"Morris\",\n            \"avatar\": \"https://reqres.in/img/faces/5-image.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"email\": \"tracey.ramos@reqres.in\",\n            \"first_name\": \"Tracey\",\n            \"last_name\": \"Ramos\",\n            \"avatar\": \"https://reqres.in/img/faces/6-image.jpg\"\n        }\n    ],\n    \"support\": {\n        \"url\": \"https://reqres.in/#support-heading\",\n        \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n    }\n}"
+            ],
+            "result": {
+              "duration": 2834696000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I called get the endpoint \"/users\" with \"default\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"default\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 3149000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 267651000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should return data based on page",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_return_data_based_on_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:26.840Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1228000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User calls the get user endpoint \"get response with high value in per_page\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2165000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am calling GET user endpoint to fetch data with \"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"page\": 1,\n    \"per_page\": 999,\n    \"total\": 12,\n    \"total_pages\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"email\": \"george.bluth@reqres.in\",\n            \"first_name\": \"George\",\n            \"last_name\": \"Bluth\",\n            \"avatar\": \"https://reqres.in/img/faces/1-image.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"email\": \"janet.weaver@reqres.in\",\n            \"first_name\": \"Janet\",\n            \"last_name\": \"Weaver\",\n            \"avatar\": \"https://reqres.in/img/faces/2-image.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"email\": \"emma.wong@reqres.in\",\n            \"first_name\": \"Emma\",\n            \"last_name\": \"Wong\",\n            \"avatar\": \"https://reqres.in/img/faces/3-image.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"email\": \"eve.holt@reqres.in\",\n            \"first_name\": \"Eve\",\n            \"last_name\": \"Holt\",\n            \"avatar\": \"https://reqres.in/img/faces/4-image.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"email\": \"charles.morris@reqres.in\",\n            \"first_name\": \"Charles\",\n            \"last_name\": \"Morris\",\n            \"avatar\": \"https://reqres.in/img/faces/5-image.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"email\": \"tracey.ramos@reqres.in\",\n            \"first_name\": \"Tracey\",\n            \"last_name\": \"Ramos\",\n            \"avatar\": \"https://reqres.in/img/faces/6-image.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"email\": \"michael.lawson@reqres.in\",\n            \"first_name\": \"Michael\",\n            \"last_name\": \"Lawson\",\n            \"avatar\": \"https://reqres.in/img/faces/7-image.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"email\": \"lindsay.ferguson@reqres.in\",\n            \"first_name\": \"Lindsay\",\n            \"last_name\": \"Ferguson\",\n            \"avatar\": \"https://reqres.in/img/faces/8-image.jpg\"\n        },\n        {\n            \"id\": 9,\n            \"email\": \"tobias.funke@reqres.in\",\n            \"first_name\": \"Tobias\",\n            \"last_name\": \"Funke\",\n            \"avatar\": \"https://reqres.in/img/faces/9-image.jpg\"\n        },\n        {\n            \"id\": 10,\n            \"email\": \"byron.fields@reqres.in\",\n            \"first_name\": \"Byron\",\n            \"last_name\": \"Fields\",\n            \"avatar\": \"https://reqres.in/img/faces/10-image.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"email\": \"george.edwards@reqres.in\",\n            \"first_name\": \"George\",\n            \"last_name\": \"Edwards\",\n            \"avatar\": \"https://reqres.in/img/faces/11-image.jpg\"\n        },\n        {\n            \"id\": 12,\n            \"email\": \"rachel.howell@reqres.in\",\n            \"first_name\": \"Rachel\",\n            \"last_name\": \"Howell\",\n            \"avatar\": \"https://reqres.in/img/faces/12-image.jpg\"\n        }\n    ],\n    \"support\": {\n        \"url\": \"https://reqres.in/#support-heading\",\n        \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n    }\n}"
+            ],
+            "result": {
+              "duration": 335574000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I called get the endpoint \"/users\" with \"max\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"max\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 662000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11534000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should return data based on page",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_return_data_based_on_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:27.258Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1783000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User calls the get user endpoint \"get response with 1 per page\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 390000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am calling GET user endpoint to fetch data with \"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"all\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"page\": 1,\n    \"per_page\": 1,\n    \"total\": 12,\n    \"total_pages\": 12,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"email\": \"george.bluth@reqres.in\",\n            \"first_name\": \"George\",\n            \"last_name\": \"Bluth\",\n            \"avatar\": \"https://reqres.in/img/faces/1-image.jpg\"\n        }\n    ],\n    \"support\": {\n        \"url\": \"https://reqres.in/#support-heading\",\n        \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n    }\n}"
+            ],
+            "result": {
+              "duration": 156714000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I called get the endpoint \"/users\" with \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 550000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3759000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should return data based on page",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_return_data_based_on_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:27.451Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6486000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User calls the get user endpoint \"get all users\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 352000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am calling GET user endpoint to fetch data with \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"data\": {\n        \"id\": 3,\n        \"email\": \"emma.wong@reqres.in\",\n        \"first_name\": \"Emma\",\n        \"last_name\": \"Wong\",\n        \"avatar\": \"https://reqres.in/img/faces/3-image.jpg\"\n    },\n    \"support\": {\n        \"url\": \"https://reqres.in/#support-heading\",\n        \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n    }\n}"
+            ],
+            "result": {
+              "duration": 153750000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I called get the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 402000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4127000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "should return the user details associated with the id",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_return_the_user_details_associated_with_the_id()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:27.640Z",
+        "before": [
+          {
+            "result": {
+              "duration": 401000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "User calls the get user endpoint \"get all users with non existing id\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 211000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am calling GET user endpoint to fetch data with \"189\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"189\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \n}"
+            ],
+            "result": {
+              "duration": 146116000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I called get the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 402000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should receive the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:27.799Z",
+        "before": [
+          {
+            "result": {
+              "duration": 277000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "User calls the get user endpoint \"get all users with invalid id\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 152000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am calling GET user endpoint to fetch data with \"3*5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3*5\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \n}"
+            ],
+            "result": {
+              "duration": 135765000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I called get the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 480000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should receive the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:27.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 634000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "User calls the get user endpoint \"get all users with invalid id\"",
+        "description": "",
+        "id": "this-feature-is-to-get-user-details;user-calls-the-get-user-endpoint-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 191000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am calling GET user endpoint to fetch data with \"3*5\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3*5\u0026\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_am_calling_get_user_endpoint_to_fetch_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \n}"
+            ],
+            "result": {
+              "duration": 149841000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I called get the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_get_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 538000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should receive the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to get User details",
+    "description": "",
+    "id": "this-feature-is-to-get-user-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/get-users.feature",
+    "tags": [
+      {
+        "name": "@allTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-02T09:30:28.115Z",
+        "before": [
+          {
+            "result": {
+              "duration": 418000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User calls the API to entry new user \"Create user with name and job\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{\"name\":\"morpheus\",\"job\":\"leader\"}"
+            ],
+            "result": {
+              "duration": 50820000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "morpheus"
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "leader"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"843\",\n    \"createdAt\": \"2021-08-02T09:30:28.177Z\"\n}"
+            ],
+            "result": {
+              "duration": 177164000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 383000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5154000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:28.368Z",
+        "before": [
+          {
+            "result": {
+              "duration": 369000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User calls the API to entry new user \"Create user with spacial char in name\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";below-details-must-return-400-error-code-but-api-is-storing-all-type-of-data-which-could-corrupt-database;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{\"name\":\"mor£$%^\u0026@*pheus\",\"job\":\"leader\"}"
+            ],
+            "result": {
+              "duration": 5808000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "mor£$%^\u0026@*pheus"
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "leader"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"208\",\n    \"createdAt\": \"2021-08-02T09:30:28.341Z\"\n}"
+            ],
+            "result": {
+              "duration": 136406000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 308000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1285000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:28.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 380000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User calls the API to entry new user \"Create user with spacial char in job\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";below-details-must-return-400-error-code-but-api-is-storing-all-type-of-data-which-could-corrupt-database;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{\"name\":\"mor£$%^\u0026@*pheus\",\"job\":\"le£$%^\u0026@*ader\"}"
+            ],
+            "result": {
+              "duration": 5272000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "mor£$%^\u0026@*pheus"
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "le£$%^\u0026@*ader"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"270\",\n    \"createdAt\": \"2021-08-02T09:30:28.487Z\"\n}"
+            ],
+            "result": {
+              "duration": 129427000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 230000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1593000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:28.666Z",
+        "before": [
+          {
+            "result": {
+              "duration": 430000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User calls the API to entry new user \"Create user without name\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";below-details-must-return-400-error-code-but-api-is-storing-all-type-of-data-which-could-corrupt-database;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{\"job\":\"leader\"}"
+            ],
+            "result": {
+              "duration": 4539000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "leader"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"378\",\n    \"createdAt\": \"2021-08-02T09:30:28.636Z\"\n}"
+            ],
+            "result": {
+              "duration": 134393000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 390000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1657000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:28.817Z",
+        "before": [
+          {
+            "result": {
+              "duration": 375000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "User calls the API to entry new user \"Create user with job\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";below-details-must-return-400-error-code-but-api-is-storing-all-type-of-data-which-could-corrupt-database;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{\"job\":\"leader\"}"
+            ],
+            "result": {
+              "duration": 3453000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  "leader"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"586\",\n    \"createdAt\": \"2021-08-02T09:30:28.784Z\"\n}"
+            ],
+            "result": {
+              "duration": 131217000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 381000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1707000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T09:30:28.981Z",
+        "before": [
+          {
+            "result": {
+              "duration": 413000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User calls the API to entry new user \"Create user without name and job\"",
+        "description": "",
+        "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user;user-calls-the-api-to-entry-new-user-\"\u003cdescription\u003e\";below-details-must-return-400-error-code-but-api-is-storing-all-type-of-data-which-could-corrupt-database;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Request Body ::\n{}"
+            ],
+            "result": {
+              "duration": 7228000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have provided information as below",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_have_provided_information_as_below(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "job",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "https://reqres.in/api/users",
+              "{\n    \"id\": \"707\",\n    \"createdAt\": \"2021-08-02T09:30:28.951Z\"\n}"
+            ],
+            "result": {
+              "duration": 137787000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I called the endpoint \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_called_the_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Status code: HTTP/1.1 201 Created"
+            ],
+            "result": {
+              "duration": 237000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should receive the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.i_should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1410000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "should have expected return body",
+            "match": {
+              "location": "com.eo.rest.test.stepDefinitions.RestReqStepDefinitions.should_have_expected_return_body()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is validate create user endpoint to entry new user",
+    "description": "",
+    "id": "this-feature-is-validate-create-user-endpoint-to-entry-new-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/post-users.feature",
+    "tags": [
+      {
+        "name": "@allTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
