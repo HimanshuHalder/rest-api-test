@@ -28,11 +28,10 @@ mvn clean test -Dcucumber.filter.tags="@allTests" -Dprofile=e1
 `-Dprofile` is to set the environment variable which will help to load required config to execute tests in that environment. It is defaulted to `e1` if that is not passed.
 
 `cucumber.filter.tags` this is being used to run specific tests. there are few available tags that will allow you to run specific set of test with required test data.
-Available tags are 
-``@allTests, @get and @post``
--`@allTests` is to execute available all tests
--`@get` is to execute available GET endpoint tests
--`@post` is to execute available POST endpoint tests
+Available tags are ``@allTests, @get and @post``
+- `@allTests` is to execute available all tests
+- `@get` is to execute available GET endpoint tests
+- `@post` is to execute available POST endpoint tests
 
 ##Execution using Editor
 Run `CucumberTests` file as JUnit. It will trigger test case execution based on tags mentioned in that class. If you want to run against different environment and different tags without changing anything in CucumberTests class, then just pass `-Dcucumber.filter.tags="@allTests" -Dprofile=e1` as jvm argument and modify these value as needed.
@@ -51,7 +50,6 @@ API doc for the example service [![https://reqres.in/](https://reqres.in/)](http
 ####Few observations about this service
 
 API endpoint observations for `POST /users` and `GET /users`:
-
 - No authentication - at least a basic authentication recomended for open api
 - Response content type not mentioned
 - Field validation missing in POST
@@ -60,7 +58,6 @@ API endpoint observations for `POST /users` and `GET /users`:
 - Defaults for get can be handled better way by restricting parameter legth and values
 
 API doc should hold more information:
-
 - not mentioned which type of timestamp to use(above apis are using epoch timestamp)
 - header information missing 
 - API json schema missing
